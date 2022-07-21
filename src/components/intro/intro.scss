@@ -1,0 +1,29 @@
+@import "../../global.scss";
+
+.intro {
+    font-family: 'Bree Serif', serif;
+    height: 100vh;
+    font-size: 6rem;
+    // margin-left: 4rem;
+    padding: 3rem;
+    color: $navText;
+    text-shadow: #822250 1px 1px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+    .container {
+        
+        // overflow: hidden;
+        margin-top: 4rem;
+        font-family: 'Bree Serif', serif;
+        font-size: 4rem;
+    }
+        .highlight {
+            color:#DEABC3;
+        }
+
+    .img {
+        width: 100%;
+    }
+}

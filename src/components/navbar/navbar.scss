@@ -1,0 +1,28 @@
+@import "../../global.scss";
+
+.navbar {
+    position: fixed;
+    height: 5rem;
+    background-color: $mainColor;
+    top: 0;
+    width: 100vw;
+    z-index: 2;
+    padding-top: 2rem;
+    font-family: 'Work Sans', sans-serif;
+    box-shadow: 4px grey;
+
+    .menu-items {
+        color: $navText;
+        text-decoration: none;
+        font-size: 2rem;
+        transition: .5s;
+        margin-left: 3rem;
+    }
+    
+    .menu-items:hover {
+        color:black;
+        font-style: italic;
+        opacity: 1;
+    }
+
+}
