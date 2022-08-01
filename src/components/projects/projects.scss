@@ -1,0 +1,44 @@
+@import "../../global.scss";
+
+.projects {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: $navText;
+    
+
+
+    h1 {
+        font-family: 'Work Sans', sans-serif;
+        text-align: center;
+        padding-bottom: 2rem;
+        margin-top: 3rem;
+        color: $mainColor;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 3rem;
+    }
+    h2 {
+        font-family: 'Bree Serif', serif;
+
+    }
+    .project-images {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+        img {
+            width: 45%;
+            margin: 1rem;
+            box-shadow: 0px 20px 40px rgba(0,0,0,0.4);
+            transition: transform .2s;
+            border-radius: 10px;
+        }
+        img:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+        
+}
