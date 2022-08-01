@@ -3,10 +3,46 @@
 .contact {
     background-color: $navText;
 
-
-
+    h1 {
+        font-family: 'Work Sans', sans-serif;
+        text-align: center;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        margin-top: 3rem;
+        color: $mainColor;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 3rem;
+    }
+    h2 {
+        font-family: 'Work Sans', sans-serif;
+        text-align: center;
+        font-weight: 500;
+    }
+    h3 {
+        font-family: 'Work Sans', sans-serif;
+        text-align: center;
+        font-weight: 500;
+    }
+    .socials {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        width: 50%;
+    }
 
     img {
-        width: 10%;
+        transition: transform .2s;
+        width: 100%;
+    }
+    img:hover {
+        transform: scale(1.1);
+    }
+    .footer {
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+    a {
+        color: $mainColor;
     }
 }

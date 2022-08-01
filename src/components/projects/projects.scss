@@ -1,9 +1,9 @@
 @import "../../global.scss";
 
 .projects {
-    height: 100%;
+    height: auto;
     background-color: $navText;
-    
+    overflow: auto;
 
 
     h1 {

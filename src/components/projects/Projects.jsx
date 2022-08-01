@@ -1,8 +1,8 @@
 import "./projects.scss";
 import fiberamie from "./fiberamie.png";
-import dreamer from "./dreamer.png"
-import sourcebook from "./sourcebook.png"
-import chirp from "./chirp.png"
+import dreamer from "./dreamer.png";
+import sourcebook from "./sourcebook.png";
+import chirp from "./chirp.png";
 
 
 export default function Projects() {
