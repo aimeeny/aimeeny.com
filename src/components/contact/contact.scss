@@ -1,6 +1,12 @@
 @import "../../global.scss";
 
 .contact {
-    height: 100vh;
-    background-color: pink;
+    background-color: $navText;
+
+
+
+
+    img {
+        width: 10%;
+    }
 }

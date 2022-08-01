@@ -3,7 +3,9 @@ import Intro from "./components/intro/Intro";
 import Projects from "./components/projects/Projects";
 import Resume from "./components/resume/Resume";
 import Contact from "./components/contact/Contact";
+import Blog from "./components/blog/Blog";
 import "./app.scss"
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 function App() {
   return (
@@ -12,8 +14,13 @@ function App() {
       <div className="sections">
         <Intro/>
         <Projects/>
-        <Contact/>
         <Resume/>
+        <Contact/>
+        <Router>
+        <Routes>
+        <Route path='/blog' element={<Blog/>} />
+        </Routes>
+        </Router>
       </div>
     </div>
   );
