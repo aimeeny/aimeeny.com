@@ -1,34 +1,59 @@
 @import "../../global.scss";
 
-.navbar {
-    position: fixed;
-    height: 5rem;
-    // background-color: $mainColor;
-    background-image: linear-gradient(to right, #822250, #DEABC3);
-    top: 0;
-    width: 100%;
-    margin: auto;
-    z-index: 2;
-    padding-top: 2rem;
-    font-family: 'Work Sans', sans-serif;
-    box-shadow: 4px grey;
-    border-bottom: 1px solid $shadowMain;
-    text-align: center;
-    
+@media (min-width: 810px) {
+    .navbar {
+        position: fixed;
+        height: 5rem;
+        // background-color: $mainColor;
+        background-image: linear-gradient(to right, #822250, #DEABC3);
+        top: 0;
+        width: 100%;
+        margin: auto;
+        z-index: 2;
+        padding-top: 2rem;
+        font-family: 'Work Sans', sans-serif;
+        box-shadow: 4px grey;
+        border-bottom: 1px solid $shadowMain;
+        text-align: center;
 
+
+        .menu-items {
+            color: $navText;
+            text-decoration: none;
+            font-size: 2rem;
+            transition: .5s;
+            margin-left: 3rem;
+        }
+
+        .menu-items:hover {
+            color:black;
+            font-style: italic;
+            opacity: 1;
+        }
+    }
+}
+
+@media (max-width: 809px) {
+    .navbar {
+        position: fixed;
+        height: 3rem;
+        background-color: $mainColor;
+        // background-image: linear-gradient(to right, #822250, #DEABC3);
+        top: 0;
+        width: 100%;
+        margin: auto;
+        z-index: 2;
+        padding-top: 2rem;
+        font-family: 'Work Sans', sans-serif;
+        box-shadow: 4px grey;
+        border-bottom: 1px solid $shadowMain;
+        text-align: left;
+    }
     .menu-items {
         color: $navText;
         text-decoration: none;
-        font-size: 2rem;
+        font-size: 1rem;
         transition: .5s;
-        margin-left: 3rem;
-        
+        margin-left: 1rem;
     }
-    
-    .menu-items:hover {
-        color:black;
-        font-style: italic;
-        opacity: 1;
-    }
-
 }

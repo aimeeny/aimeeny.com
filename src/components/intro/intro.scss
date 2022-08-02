@@ -1,50 +1,106 @@
 @import "../../global.scss";
 
-.intro {
-    font-family: 'Bree Serif', serif;
-    height: 70rem;
-    width: 100%;
-    font-size: 6rem;
-    // margin-left: 4rem;
-    padding: 3rem;
-    color: $navText;
-    text-shadow: #822250 1px 1px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    background-color: rgb(73, 25, 59);
-    font-family: 'Bree Serif', serif;
-    font-size: 3rem;
-    overflow: hidden;
-    
-    .container {
-        margin-top: 4rem;
+@media (min-width: 810px) {
+    .intro {
         font-family: 'Bree Serif', serif;
-        font-size: 3rem;
-        height: 100vh;
-        
+        height: 70rem;
+        width: 100%;
+        font-size: 5rem;
+        // margin-left: 4rem;
+        padding: 3rem;
+        color: $navText;
+        text-shadow: #822250 1px 1px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background-color: rgb(73, 25, 59);
+        font-family: 'Bree Serif', serif;
+        overflow: hidden;
+
+        .container {
+            margin-top: 4rem;
+            font-family: 'Bree Serif', serif;
+            font-size: 3rem;
+            height: 100vh;
+
+        }
+            h1 {
+                width: 80%;
+                margin-left: 3rem;
+                padding-bottom: -5rem;
+                // height: 30rem;
+            }
+            .highlight {
+                color:#DEABC3;
+            }
+            p {
+                width: 80%;
+                font-family: 'Work Sans', sans-serif;
+                padding-bottom: -5rem;
+                margin: 1rem;
+                font-size: 2rem;
+            }
+
+        .img {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 809px) {
+    .intro {
+        font-family: 'Bree Serif', serif;
+        // height: 70rem;
+        width: 100%;
+        font-size: 1.5rem;
+        padding: 1rem;
+        color: $navText;
+        text-shadow: #822250 1px 1px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background-color: rgb(73, 25, 59);
+        font-family: 'Bree Serif', serif;
+        overflow: hidden;
+    }
+    .container {
+        margin-top: .5rem;
+        height: auto;
+
     }
         h1 {
             width: 80%;
-            margin-left: 3rem;
+            margin-left: 1rem;
             padding-bottom: -5rem;
-            // height: 30rem;
+            text-align: center;
         }
         .highlight {
-            color:#DEABC3;
+            color:$textHighlight;
         }
         p {
             width: 80%;
             font-family: 'Work Sans', sans-serif;
             padding-bottom: -5rem;
             margin: 1rem;
-            font-size: 2rem;
+            font-size: 1.2rem;
         }
 
     .img {
         width: 100%;
     }
-    
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
     // SCROLL INDICATOR 
     // .scroll-down {
@@ -114,4 +170,3 @@
     //         opacity: 1;
     //     }
     // }
-}
